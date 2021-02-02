@@ -1,7 +1,7 @@
 -- don't actually need distinct...
-SELECT DISTINCT teachers.name AS teacher, 
-  cohorts.name AS cohort,
-  COUNT(assistance_requests.*) AS total_assistances
+SELECT DISTINCT teachers.name AS "teacher", 
+  cohorts.name AS "cohort",
+  COUNT(assistance_requests.*) AS "total_assistances"
 
 FROM teachers
 
@@ -12,3 +12,4 @@ JOIN cohorts ON cohort_id = cohorts.id
 WHERE cohorts.name = 'JUL02'
 GROUP BY teacher, cohort
 ORDER BY teacher;
+

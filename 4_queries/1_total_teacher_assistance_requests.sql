@@ -1,5 +1,5 @@
-SELECT COUNT(assistance_requests.*) AS total_assistance, 
-teachers.name AS name
+SELECT COUNT(assistance_requests.*) AS "total_assistance", 
+teachers.name AS "name"
 
 FROM assistance_requests
 -- WHERE name = 'Waylon Boehm'
